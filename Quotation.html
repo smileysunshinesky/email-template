@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table thead {
+            background-color: transparent;
+        }
+    </style>
+</head>
+
+<body style="margin: 0; font-family: 'Poppins', sans-serif; background: #ffffff; font-size: 14px;">
+    <div
+        style="max-width: 680px; margin: 0 auto; padding: 40px 30px 40px; background: #f4f7ff; background-image: url(./2.jpg); background-repeat: no-repeat; background-size: 741px 300px; background-position: top center; font-size: 14px; color: #434343;">
+        <header>
+            <table style="width: 100%;">
+                <thead>
+                    <tr style="height: 0;">
+                        <td><img alt="" src="https://timekeeper.abrsuite.com/tm.png" height="50px" /></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <main>
+                                <div
+                                    style="border-top: solid 8px #4977c0; margin: 0; margin-top: 30px; padding: 40px 20px 40px;background: #ffffff;border-radius: 30px;text-align: center;">
+                                    <div style="width: 100%; max-width: 530px; margin: 0 auto;">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <td colspan="2">
+                                                        <h2><strong>Hi {customer_name},</strong></h2>
+                                                        <p style="line-height: 2rem; text-align: justify;">Thank you for
+                                                            your order. Here’s a brief overview of your Quotation
+                                                            #{order_reference_no} that was created on {order_date}.</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="height:35px;" colspan="2"></td>
+                                                </tr>
+                                                <tr>
+                                                    <th style="text-align:left;">{company_name}</th>
+                                                    <th style="text-align:right;font-weight:400;">{order_date}</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td style="height:35px;"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2" style="border: solid 1px #ddd; padding:10px 20px;">
+                                                        <p style="text-align:left;font-size:15px;margin:0 0 10px 0;">
+                                                            <span
+                                                                style="font-weight:bold;display:inline-block;min-width:150px">Order
+                                                                status:</span>
+                                                            <b
+                                                                style="color:green;font-weight:normal;margin:0">Success</b>
+                                                        </p>
+                                                        <p style="text-align:left;font-size:15px;margin:0 0 10px 0;">
+                                                            <span
+                                                                style="font-weight:bold;display:inline-block;min-width:146px">Reference
+                                                                No:</span>
+                                                            {order_reference_no}
+                                                        </p>
+                                                        <p style="text-align:left;font-size:15px;margin:0 0 10px 0;">
+                                                            <span
+                                                                style="font-weight:bold;display:inline-block;min-width:146px">Name:</span>
+                                                            {customer_name}
+                                                        </p>
+                                                        <p style="text-align:left;font-size:15px;margin:0 0 10px 0;">
+                                                            <span
+                                                                style="font-weight:bold;display:inline-block;min-width:146px">Total
+                                                                amount:</span>
+                                                            {currency}{total_amount}
+                                                        </p>
+                                                        <p style="text-align:left;font-size:15px;margin:0 0 10px 0;">
+                                                            <span
+                                                                style="font-weight:bold;display:inline-block;min-width:146px">Billing
+                                                                Address:</span>
+                                                            {billing_street}, {billing_city}, {billing_state},
+                                                        </p>
+                                                        <p style="text-align:left;font-size:15px;margin:0 0 10px 0;">
+                                                            <span
+                                                                style="font-weight:bold;display:inline-block;min-width:146px"></span>
+                                                            {billing_zip_code},
+                                                            {billing_country}
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </main>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>
+                            <footer
+                                style="width: 100%;max-width: 490px;margin: 10px auto 0;text-align: center;border-top: 1px solid #e6ebf1;">
+                                <p style="margin: 0;margin-top: 20px;font-size: 16px;font-weight: 600;color: #434343;">
+                                    ABRS ®</p>
+                                <p style="margin: 0; margin-top: 10px; color: #434343;">All rights reserved.</p>
+                            </footer>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </header>
+    </div>
+</body>
+
+</html>
