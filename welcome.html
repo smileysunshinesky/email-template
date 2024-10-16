@@ -5,28 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        .myButton {
-            background-color: #42abdd;
-            border-radius: 5px;
-            display: inline-block;
-            cursor: pointer;
-            color: #ffffff;
-            font-family: Trebuchet MS;
-            font-size: 17px;
-            font-weight: bold;
-            padding: 9px 28px;
-            text-decoration: none;
-            text-shadow: 0px 1px 2px #3d768a;
-        }
-
-        .myButton:hover {
-            background-color: #408c99;
-        }
-
-        .myButton:active {
-            position: relative;
-            top: 1px;
-        }
         table thead {
             background-color: transparent;
         }
@@ -93,8 +71,11 @@
                                             style="line-height: 1.2; font-size: 12px; color: #f3f8ff; font-family: Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif; mso-line-height-alt: 14px;">
                                             <p
                                                 style="font-size: 18px; line-height: 1.2; word-break: break-word; text-align: left; mso-line-height-alt: 22px; margin: 0;">
-                                                <span style="color: #f3f8ff; font-size: 18px;"><strong>Hello
-                                                        {assignee_name},</strong></span>
+                                                <span style="color: #f3f8ff; font-size: 18px;"><strong>Dear {user_name},</strong></span>
+                                            </p>
+                                            <p
+                                                style="font-size: 18px; line-height: 1.2; word-break: break-word; text-align: left; margin-top: 10px;">
+                                                <span style="color: #f3f8ff; font-size: 18px;"><strong>Welcome to TimeKeeper!</strong></span>
                                             </p>
                                         </div>
                                     </div>
@@ -103,87 +84,81 @@
                                         <div
                                             style="line-height: 1.2; font-size: 12px; color: #f3f8ff; font-family: Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif; mso-line-height-alt: 14px;">
                                             <p
-                                                style="font-size: 17px; line-height: 1.2; word-break: break-word; text-align: left; mso-line-height-alt: 22px; margin: 0; padding-right: 5%; text-align: justify ">
-                                                <span style="color: #f3f8ff; font-size: 17px;">A new support
-                                                    task has been assigned to you. Here is a brief overview of
-                                                    the task. Please have a look.</span>
-                                            </p><br />
+                                                style="font-size: 18px; line-height: 1.2; word-break: break-word; text-align: left; mso-line-height-alt: 22px; margin: 0;">
+                                                <span style="color: #f3f8ff; font-size: 16px;">
+                                                    We’re excited to have you on board. TimeKeeper is our go-to system for tracking time and managing expenses for all of our projects, ensuring efficiency and accuracy in your work.
+                                                    <!-- A warm welcome to
+                                                    {company_name} family, please login to the <a
+                                                        href="{company_url}">portal</a> to see the details of
+                                                    your account. -->
+                                                </span>
+                                                <p
+                                                    style="font-size: 16px; line-height: 1.2; word-break: break-word; text-align: left; margin-top: 10px;">
+                                                    <span style="color: #f3f8ff; font-size: 16px;">
+                                                        Getting Started: <br><br>
+                                                        To begin using TimeKeeper, simply click the link below to log in to the portal:
+                                                        <a href="{company_url}">TimeKeeper Login Portal</a></span>
+                                                </p>
+                                                
+                                            </p>
+                                            
                                         </div>
                                     </div>
                                     <div
                                         style="text-align:left;background-color:#007bff;color:#f3f8ff;font-family:Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;line-height:1.5;padding-top:10px;padding-right:10px;padding-bottom:20px;padding-left:25px;">
+                                        <h5> <u>Credentials</u>: </h5>
                                         <div
-                                            style="line-height: 1.5; font-size: 12px; font-family: Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif; color: #f3f8ff; mso-line-height-alt: 18px;">
+                                            style="margin-left:5px;line-height: 1.5; font-size: 12px; font-family: Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif; color: #f3f8ff; mso-line-height-alt: 18px;">
                                             <p
                                                 style="font-size: 15px; line-height: 1.5; font-family: inherit; word-break: break-word; mso-line-height-alt: 23px; margin: 0;">
-                                                <u><b>Task Details:</b></u>
-                                            </p>
-                                            <p
-                                                style="font-size: 15px; line-height: 1.5; font-family: inherit; word-break: break-word; mso-line-height-alt: 23px; margin: 0;">
-                                                <span style="font-size: 15px;">Task Name: <span
+                                                <span style="font-size: 15px;">User ID: <span
                                                         style="color: #f3f8ff;"><strong>
-                                                            {task_name}</strong></span></span>
+                                                            {user_id}</strong></span></span>
                                             </p>
                                             <p
                                                 style="font-size: 15px; line-height: 1.5; font-family: inherit; word-break: break-word; mso-line-height-alt: 23px; margin: 0;">
-                                                <span style="font-size: 15px;">Description: <span
+                                                <span style="font-size: 15px;">Password: <span
                                                         style="color: #f3f8ff;"><strong>
-                                                            {task_details}</strong></span></span>
+                                                            {user_pass}</strong></span></span>
                                             </p>
-                                            <p
-                                                style="font-size: 15px; line-height: 1.5; font-family: inherit; word-break: break-word; mso-line-height-alt: 23px; margin: 0;">
-                                                <span style="font-size: 15px;">Start Date: <span
-                                                        style="color: #f3f8ff;"><strong>
-                                                            {start_date}</strong></span></span>
-                                            </p>
-                                            <p
-                                                style="font-size: 15px; line-height: 1.5; font-family: inherit; word-break: break-word; mso-line-height-alt: 23px; margin: 0;">
-                                                <span style="font-size: 15px;">Due Date: <span
-                                                        style="color: #f3f8ff;"><strong>
-                                                            {due_date}</strong></span></span>
-                                            </p>
-                                            <p
-                                                style="font-size: 15px; line-height: 1.5; font-family: inherit; word-break: break-word; mso-line-height-alt: 23px; margin: 0;">
-                                                <span style="font-size: 15px;">Priority: <span
-                                                        style="color: #f3f8ff;"><strong>
-                                                            {priority}</strong></span></span>
-                                            </p>
-                                            <p
-                                                style="font-size: 15px; line-height: 1.5; font-family: inherit; word-break: break-word; mso-line-height-alt: 23px; margin: 0;">
-                                                <span style="font-size: 15px;">Checklist: <span
-                                                        style="color: #f3f8ff;"><strong>
-                                                            {task_checklist}</strong></span></span>
-                                            </p>
-                                            <p
-                                                style="font-size: 15px; line-height: 1.5; font-family: inherit; word-break: break-word; mso-line-height-alt: 23px; margin: 0;">
-                                                <span style="font-size: 15px;">Status: <span
-                                                        style="color: #f3f8ff;"><strong>
-                                                            {ticket_status}</strong></span></span>
-                                            </p>
-                                        </div>
-                                        <div>
-                                            <p
-                                                style="font-size: 15px; padding-top: 3%; line-height: 1; word-break: break-word; text-align: center; mso-line-height-alt: 22px; margin: 0;font-family: inherit;">
-                                                <span style="color: #f3f8ff; font-size: 18px; line-height: 1rem;">You
-                                                    can go to the task by clicking the following button.</span>
-                                            </p>
-                                            <div style="text-align: center; width: 100%; padding-top: 3%;">
-                                                <a href="{task_link}" class="myButton" style="color: #ffffff">View
-                                                    Task</a>
-                                            </div>
                                         </div>
                                     </div>
                                     <div
-                                        style="text-align:left;background-color:#007bff;color:#f3f8ff;font-family:Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;line-height:1.5;padding-top:20px;padding-right:30px;padding-bottom:40px;padding-left:30px;">
+                                        style="background-color:#007bff;color:#f3f8ff;font-family:Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;line-height:1.5;padding-top:20px;padding-right:30px;padding-bottom:40px;padding-left:30px;">
                                         <div
                                             style="line-height: 1.5; font-size: 12px; font-family: Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif; color: #f3f8ff; mso-line-height-alt: 18px;">
                                             <p
                                                 style="font-size: 15px; line-height: 1.5; word-break: break-word; text-align: left; font-family: inherit; mso-line-height-alt: 23px; margin: 0;">
-                                                <span style="color: #f3f8ff; font-size: 15px;">Regards,</span>
+                                                <span style="color: #f3f8ff; font-size: 15px;">
+                                                    Here are a few quick steps to get you started:
+
+                                                    Log in using your assigned credentials.
+                                                    Track your hours by selecting your project and inputting your time.
+                                                    Record any project-related expenses directly in the system.
+                                                    Submit your entries for approval as needed.</span>
+                                            </p>
+                                            <br>
+                                            <p
+                                                style="font-size: 15px; line-height: 1.5; word-break: break-word; text-align: left; font-family: inherit; mso-line-height-alt: 23px; margin: 0;">
+                                                <span
+                                                    style="color: #f3f8ff; font-size: 15px;">
+                                                    If you have any questions or need assistance, feel free to reach out to <a href="mailto:connect@intoai.ai">connect@intoai.ai</a> for help.</span>
                                             </p>
                                             <p
                                                 style="font-size: 15px; line-height: 1.5; word-break: break-word; text-align: left; font-family: inherit; mso-line-height-alt: 23px; margin: 0;">
-                                                <span style="color: #f3f8ff; font-size: 15px;">{company_name}</span>
+                                                <span style="color: #f3f8ff; font-size: 15px;">We look forward to your contributions and hope TimeKeeper helps you stay on top of your projects!</span>
+                                            </p>
+                                        </div>
+                                        <br>
+                                        <div
+                                            style="line-height: 1.5; font-size: 12px; font-family: Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif; color: #f3f8ff; mso-line-height-alt: 18px;">
+                                            <p
+                                                style="font-size: 15px; line-height: 1.5; word-break: break-word; text-align: left; font-family: inherit; mso-line-height-alt: 23px; margin: 0;">
+                                                <span style="color: #f3f8ff; font-size: 15px;">Best regards,</span>
+                                            </p>
+                                            <p
+                                                style="font-size: 15px; line-height: 1.5; word-break: break-word; text-align: left; font-family: inherit; mso-line-height-alt: 23px; margin: 0;">
+                                                <span style="color: #f3f8ff; font-size: 15px;">Advanced Bioresearch Solutions, Inc.</span>
                                             </p>
                                         </div>
                                     </div>
